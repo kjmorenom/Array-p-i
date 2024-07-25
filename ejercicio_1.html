@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores ejercicio 1</title>
+</head>
+<body>
+    <script text="text/javascript">
+        
+        function vector(){
+
+            let vecNumeros = [];
+            
+            for (let i=1;i<11;i++){
+                let numero = parseInt(prompt("Ingrese el número "+i+" de 10"));
+                if (numero >= 0){
+                    vecNumeros.push(numero)
+                }else{
+                    break;
+                }
+            }
+            document.write(vecNumeros);
+        }
+
+        vector();
+
+    </script>
+</body>
+</html>

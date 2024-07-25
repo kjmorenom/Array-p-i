@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores ejercicio 2</title>
+</head>
+<body>
+    <script text="text/javascript">
+
+        
+        function vectorN (){
+
+            let vectorNumeros = []
+            let countPares = 0
+            let sumaPares = 0
+            let countImpares = 0
+            let sumaImpares = 0
+            let n = parseInt(prompt("Ingrese la cantidad de números a Ingresar"))
+    
+            for (i=1; i<= n;i++) {
+                let num = parseFloat(prompt("Ingrese el número "+ i + " de "+ n ))
+                vectorNumeros.push(num)
+                if (num % 2 == 0){
+                    countPares = countPares + 1
+                    sumaPares = sumaPares + num
+                }else{
+                    countImpares = countImpares + 1
+                    sumaImpares = sumaImpares + num
+                }
+            }
+    
+            document.write("Números Ingresados: " + vectorNumeros)
+            document.write("<p> Conteo pares: " + countPares)
+            document.write("<p> Suma pares: " + sumaPares)
+            document.write("<p> Conteo impares: " + countImpares)
+            document.write("<p> Suma impares: " + sumaImpares)
+            document.write("<p> Suma impares: " + sumaImpares)
+            
+        }
+
+        vectorN();
+
+
+    </script>
+</body>
+</html>
